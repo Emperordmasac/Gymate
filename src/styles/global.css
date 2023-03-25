@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-white: #ffffff;
+  --secondary-white: #EBE8EB;
+  --tertiary-white: #E9E9E9;
+  --off-white:  #E5E5E5;
+  --primary-black:  #000000;
+  --secondary-black:  #373737;
+  --primary-red:  #B6002C;
+  --tertiary-black: #9D9A9E;
+  --primary-blue: #2081e2;
+  --primary-background: rgba(0, 0, 0, 0.5);
+  
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
