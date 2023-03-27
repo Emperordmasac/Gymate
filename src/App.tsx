@@ -1,16 +1,10 @@
-import { Routes, Route } from "react-router-dom";
-
 //--INTERNAL IMPORTS
-import NavBar from "components/navigation/Navbar";
-import Home from "pages/Home";
+import { MainPageLayout } from "layout";
 
 const App = () => {
     return (
         <>
-            <NavBar />
-            <Routes>
-                <Route path="/" element={<Home />} />
-            </Routes>
+            <MainPageLayout />
         </>
     );
 };

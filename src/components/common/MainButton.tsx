@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-//--iINTERNAL IMPORTS
+//--INTERNAL IMPORTS
 import { goTop } from "utils/helpers";
 
 //--TYPE DEFINITIONS

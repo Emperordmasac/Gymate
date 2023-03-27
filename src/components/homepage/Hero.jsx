@@ -3,7 +3,7 @@ import React from "react";
 //--INTERNAL IMPORTS
 import MainButton from "components/common/MainButton";
 
-//--IMPORT HELPERS
+//--IMPORT HELPERS & IMAGES
 import TitleBg from "styles/images/pricing/titlebg.svg";
 
 const Hero = () => {

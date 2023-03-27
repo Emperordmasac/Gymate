@@ -1,7 +1,7 @@
 import React from "react";
 
 //--INTERNAL IMPORTS
-import Hero from "components/hero/Hero";
+import Hero from "components/homepage/Hero";
 
 const Home = () => {
     return (
