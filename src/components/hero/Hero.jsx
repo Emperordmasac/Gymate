@@ -16,7 +16,7 @@ const Hero = () => {
                 <div className="hero_container">
                     <div
                         className="flex flex-col text-white 
-                    absolute hero_text min800:text-center min800:-right-[22rem] min620:-right-[20rem] min800:w-[80%] min540:-right-[17rem] min450:-right-[14rem] min375:-right-[11rem]"
+                    absolute hero_text min800:items-center min800:-right-[22rem] min620:-right-[20rem] min800:w-[80%] min540:-right-[17rem] min450:-right-[14rem] min375:-right-[11rem]"
                     >
                         <p className="text-black text-[16px] uppercase font-medium relative z-10 pl-16 min800:pl-0 mb-8">
                             find your energy
