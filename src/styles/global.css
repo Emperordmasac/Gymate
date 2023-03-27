@@ -33,3 +33,63 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
 }
+
+/* HOME SECTION --------------------------------*/
+.hero_section {
+  background-image: url('../styles/images/hero/hero-img.jpg');
+  width: 100%;
+  height: 110vh;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+.hero_container {
+  max-width: 111.6rem;
+  margin: 0 auto;
+}
+
+.hero_text {
+  top: 55%;
+  right: 12px;
+  transform: translate(-50%, -50%);
+}
+
+.title_white {
+  filter: brightness(0) invert(1);
+}
+
+.hero_cta::after {
+  content: '';
+  width: 20rem;
+  height: 5.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.362);
+  position: absolute;
+  top: -12px;
+  left: 12px;
+  transition: all 0.4s;
+}
+
+.hero_cta:hover:after {
+  content: '';
+  width: 20rem;
+  height: 5.5rem;
+  border: 1px solid rgba(255, 255, 255);
+  position: absolute;
+  top: -0px;
+  left: 0px;
+  transition: all 0.4s;
+}
+
+/* MEDIA QUERIES --------------------------------*/
+
+@media (max-width: 1200px) {
+  .navlist_nav {
+    display: none;
+  }
+
+  .fa-bars {
+    display: flex;
+  }
+}
+
