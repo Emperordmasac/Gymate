@@ -1,3 +1,8 @@
+//--INTERNAL IMPORTS
+import ProgressImg from 'styles/images/who-we-are/progresion.png'
+import WorkoutImg from 'styles/images/who-we-are/workout.png'
+import NutritionImg from 'styles/images/who-we-are/nutritions.png'
+
 export const mainNavList = [
   {
     id: 1,
@@ -38,5 +43,29 @@ export const mainNavList = [
     id: 8,
     url: '/contact',
     title: 'Contact',
+  },
+]
+
+export const cardList = [
+  {
+    id: 1,
+    img: ProgressImg,
+    title: 'Progress',
+    description:
+      'Our team of experts will work with you to create a customized plan that helps you achieve success one step at a time.',
+  },
+  {
+    id: 2,
+    img: WorkoutImg,
+    title: 'Workout',
+    description:
+      " With a variety of workouts to choose from, you'll have everything you need to get into the best shape of your life.",
+  },
+  {
+    id: 3,
+    img: NutritionImg,
+    title: 'Nutritions',
+    description:
+      'Our team will work with you to create a personalized meal plan that helps you reach your specific health goals.',
   },
 ]

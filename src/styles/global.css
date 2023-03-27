@@ -18,6 +18,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+/* RESET DEFAULT CSS --------------------------------*/
 
 * {
   margin: 0;
@@ -32,6 +33,18 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
+}
+
+/* GLOBAL CSS --------------------------------*/
+
+.container {
+  max-width: 124rem;
+  margin: 0 auto;
+}
+
+.page_padding {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 /* HOME SECTION --------------------------------*/
@@ -79,6 +92,91 @@ body {
   top: -0px;
   left: 0px;
   transition: all 0.4s;
+}
+
+/* ABOUT SECTION --------------------------------*/
+.about_section {
+  background-image: url(../styles/images/who-we-are/background.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.about_cta {
+  padding: 1.82rem 3.6rem;
+  transition: all 0.3s;
+  width: 21rem;
+}
+
+.about_cta::after {
+  content: "";
+  width: 20rem;
+  height: 5.5rem;
+  border: 1px solid rgba(63, 63,63, 0.362);
+  position: absolute;
+  top: -12px;
+  left: 12px;
+  transition: all 0.4s;
+}
+
+.about_cta:hover:after {
+  content: "";
+  width: 19rem;
+  height: 5.8rem;
+  border: 1px solid #ff0336;
+  position: absolute;
+  top: -0px;
+  left: 0px;
+  transition: all 0.4s;
+}
+
+.girl_running {
+  width: 100%;
+  height: auto;
+  top: 60%;
+  right: 46%;
+  transform: translate(50%, -50%);
+  position: absolute;
+  z-index: 5;
+}
+
+.girl_bg {
+  width: 51%;
+  height: auto;
+  top: 67.7%;
+  right: 33%;
+  transform: translate(50%, -50%);
+  position: absolute;
+}
+
+.girl_text {
+  width: 17%;
+  height: auto;
+  top: 67.7%;
+  right: 84%;
+  transform: translate(50%, -50%);
+  position: absolute;
+
+}
+
+.girl_wind {
+  width: 15%;
+  height: auto;
+  top: 64.7%;
+  right: 29%;
+  transform: translate(50%, -50%);
+  position: absolute;
+}
+
+.card_div {
+  transition: all 0.2s;
+}
+
+.card_div:hover {
+  color: white;
+  background-image: url(../styles/images/who-we-are/info-card-bg.jpg);
 }
 
 /* MEDIA QUERIES --------------------------------*/
