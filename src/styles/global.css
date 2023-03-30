@@ -179,6 +179,262 @@ body {
   background-image: url(../styles/images/who-we-are/info-card-bg.jpg);
 }
 
+/* FEATURED SECTION --------------------------------*/
+
+/* GRID SYSTEM ---------------------*/
+.item_0_div {
+  height: 30rem;
+  width: 100%;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-end: 3;
+  overflow: hidden;
+}
+
+.item_1_div {
+  height: 30rem;
+  width: 100%;
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-row-end: 2;
+  grid-column-end: 4;
+  overflow: hidden;
+}
+
+.item_2_div {
+  height: 30rem;
+  width: 100%;
+  grid-row-start: 1;
+  grid-column-start: 4;
+  grid-row-end: 2;
+  grid-column-end: 5;
+  overflow: hidden;
+}
+
+.item_3_div {
+  height: 30rem;
+  width: 100%;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 2;
+  overflow: hidden;
+}
+
+.item_4_div {
+  height: 30rem;
+  width: 100%;
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 3;
+  overflow: hidden;
+}
+
+.item_5_div {
+  height: 30rem;
+  width: 100%;
+  grid-row-start: 2;
+  grid-column-start: 3;
+  grid-row-end: 3;
+  grid-column-end: 5;
+  overflow: hidden;
+}
+
+
+
+.item_0 {
+  background-image: url(../styles/images/features/cycling.jpg);
+  width: 100%;
+  height: 100%;
+}
+
+
+.item_1 {
+  background-image: url(../styles/images/features/karate.jpg);
+  width: 100%;
+  height: 100%;
+}
+
+.item_2 {
+  background-image: url(../styles/images/features/power.jpg);
+  width: 100%;
+  height: 100%;
+}
+
+.item_3 {
+  background-image: url(../styles/images/features/meditation.jpg);
+  width: 100%;
+  height: 100%;
+}
+
+.item_4 {
+  background-image: url(../styles/images/features/mma.jpg);
+  width: 100%;
+  height: 100%;
+}
+
+.item_5 {
+  background-image: url(../styles/images/features/workout.jpg);
+  width: 100%;
+  height: 100%;
+}
+
+.item_0,
+.item_1,
+.item_2,
+.item_3,
+.item_4,
+.item_5   {
+  filter: grayscale(100%);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 2px 2px 8px 160px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.item_0:hover, 
+.item_1:hover,
+.item_2:hover,
+.item_3:hover,
+.item_4:hover,
+.item_5:hover {
+  filter: grayscale(0%);
+  transform: scale(1.3);
+  box-shadow: inset 2px 2px 8px 160px rgba(0,0,0,0);
+}
+
+
+/* before pseudo */
+.item_0_div::before, 
+.item_1_div::before,
+.item_2_div::before,
+.item_3_div::before,
+.item_4_div::before,
+.item_5_div::before
+ {
+  width: 50%;
+  z-index: 6;
+  position: absolute;
+  transition: all .4s;
+  display: block;
+  transform: scale(.65);
+}
+
+.item_0_div::before {
+  content: url(../styles/images/features/gym-bike.png);
+  left: -25px;
+  bottom: 45%;
+}
+
+.item_1_div::before {
+  content: url(../styles/images/features/karate.png);
+  left: -1px;
+  bottom: 45%;
+}
+
+.item_2_div::before {
+  content: url(../styles/images/features/dumbbell.png);
+  left: -1px;
+  bottom: 45%;
+}
+
+.item_3_div::before {
+  content: url(../styles/images/features/yoga.png);
+  left: -1px;
+  bottom: 45%;
+}
+
+.item_4_div::before {
+  content: url(../styles/images/features/boxer.png);
+  left: -1px;
+  bottom: 45%;
+}
+
+.item_5_div::before {
+  content: url(../styles/images/features/workout.png);
+  left: -25px;
+  bottom: 45%;
+}
+
+.item_0_div:hover:before,
+.item_1_div:hover:before,
+.item_2_div:hover:before,
+.item_3_div:hover:before,
+.item_4_div:hover:before,
+.item_5_div:hover:before     {
+  transform: scale(.66);
+}
+
+.item_0_div:hover:before {
+  content: url(../styles/images/features/bike-red.png);
+}
+
+.item_1_div:hover:before {
+  content: url(../styles/images/features/karate-red.png);
+}
+
+.item_2_div:hover:before {
+  content: url(../styles/images/features/dumb-red.png);
+}
+
+.item_3_div:hover:before {
+  content: url(../styles/images/features/yoga-red.png);
+}
+
+.item_4_div:hover:before {
+  content: url(../styles/images/features/boxer-red.png);
+}
+
+.item_5_div:hover:before {
+  content: url(../styles/images/features/workout-red.png);
+}
+
+
+
+/* after pseudo */
+.item_0_div::after,
+.item_1_div::after,
+.item_2_div::after,
+.item_3_div::after,
+.item_4_div::after,
+.item_5_div::after    {
+  content: "";
+  height: 69px;
+  width: 140px;
+  background-color: rgba(255, 255, 255, .3);
+  position: absolute;
+  left: -49px;
+  bottom: 50%;
+  border-radius: 0 50px 50px 0;
+  transform: rotate(30deg);
+  transition: all .4s;
+  z-index: 5;
+}
+
+.item_0_div:hover:after
+.item_1_div:hover:after,
+.item_2_div:hover:after,
+.item_3_div:hover:after,
+.item_4_div:hover:after,
+.item_5_div:hover:after {
+  background-color: rgb(255, 255, 255);
+
+} 
+/* END OF GRID SYSTEM */
+
+.featured_cta {
+  background-image: url(../styles/images/features/cta-bg.png);
+  height: 21rem;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
 /* MEDIA QUERIES --------------------------------*/
 
 @media (max-width: 1200px) {

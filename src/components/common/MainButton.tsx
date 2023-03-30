@@ -5,12 +5,12 @@ import { goTop } from "utils/helpers";
 
 //--TYPE DEFINITIONS
 type Props = {
-    color: string;
-    bg: string;
-    cN: string;
-    arrowColor: string;
-    hover: string;
-    text: string;
+    color?: string;
+    bg?: string;
+    cN?: string;
+    arrowColor?: string;
+    hover?: string;
+    text?: string;
     url: string;
 };
 
