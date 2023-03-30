@@ -242,8 +242,6 @@ body {
   overflow: hidden;
 }
 
-
-
 .item_0 {
   background-image: url(../styles/images/features/cycling.jpg);
   width: 100%;
@@ -392,8 +390,6 @@ body {
   content: url(../styles/images/features/workout-red.png);
 }
 
-
-
 /* after pseudo */
 .item_0_div::after,
 .item_1_div::after,
@@ -432,6 +428,39 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+/* CHOOSE US SECTION --------------------------------*/
+.choose_section {
+  background-image: url(../styles/images/choose-us/choose-bg.jpg);
+  background-size: cover;
+  object-fit: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.video_div::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  background-color: #ff0336;
+  height: 461px;
+  width: 10px;
+  transform: translateY(-50%)rotate(174deg);
+  -webkit-transform: translateY(-50%)rotate(174deg);
+
+}
+
+.video_div::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -30px;
+  background-color: #ff0336;
+  height: 42%;
+  width: 10px;
 }
 
 
