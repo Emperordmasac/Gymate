@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 
 //--INTERNAL IMPORTS
+import Quotes from "styles/images/testimonials/quotes.png";
+import BoxShape from "styles/images/testimonials/testimonial-shape.svg";
 import TrainerBg from "styles/images/trainers/trainer-bg.png";
 import Shape from "styles/images/trainers/shape.png";
-import { trainers } from "utils/constants";
+import { trainers, testimonials } from "utils/constants";
 
 export const TrainersCard = () => {
     const [isHover, setHover] = useState(false);
@@ -60,6 +62,64 @@ export const TrainersCard = () => {
                     </div>
                 ))}
             </div>
+        </>
+    );
+};
+
+export const TestimonialCard = () => {
+    return (
+        <>
+            {testimonials.map((testimonial, i) => (
+                <div key={testimonial.id}>
+                    <img
+                        alt="customer_img"
+                        src={testimonial.img}
+                        className="bottom-0 -left-10 h-[46rem] z-20 rounded-tr-[200px] md1000:hidden absolute"
+                    />
+
+                    <div className="flex">
+                        <div className="absolute flex flex-col bg-black top-0 right-0 w-[60%] h-full py-[47px] px-[50px] min540:py-[24px] min540:px-[30px] min540:h-[40rem] min375:h-[50rem] md1000:w-full">
+                            <img
+                                alt="quote_img"
+                                src={Quotes}
+                                className="w-[6rem]"
+                            />
+                            <p className="text-[#dedede] text-[16px] italic my-6 z-10">
+                                {testimonial.text}
+                            </p>
+                            <h3 className="text-white text-[21px] mb-1 font-bold">
+                                {testimonial.name}
+                            </h3>
+                            <p className="text-[#dedede] font-medium text-[14px]">
+                                {testimonial.job}
+                            </p>
+                            <img
+                                alt="box_img"
+                                src={BoxShape}
+                                className="w-[17.5rem] absolute bottom-0 right-[13.5rem] invert opacity-40"
+                            />
+                        </div>
+                    </div>
+
+                    {/* buttons */}
+                    <div className="flex gap-3 absolute bottom-[25px] right-[35px] z-20 min540:-bottom-[52px] min540:right-[17px]">
+                        <button
+                            title="left"
+                            style={{ transition: "all 0.2s" }}
+                            className="py-5 px-7 bg-white text-black text-2xl hover:bg-[#FF0336] hover:text-white"
+                        >
+                            <i className="fa-solid fa-arrow-left"></i>
+                        </button>
+                        <button
+                            title="right"
+                            style={{ transition: "all 0.2s" }}
+                            className="py-5 px-7 bg-white text-black text-2xl hover:bg-[#FF0336] hover:text-white"
+                        >
+                            <i className="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            ))}
         </>
     );
 };

@@ -5,6 +5,7 @@ import NutritionImg from 'styles/images/who-we-are/nutritions.png'
 import Trainer1 from 'styles/images/trainers/trainer1.png'
 import Trainer2 from 'styles/images/trainers/trainer2.png'
 import Trainer3 from 'styles/images/trainers/trainer3.png'
+import TestimonialImg from 'styles/images/testimonials/testimonial-new.jpg'
 
 export const mainNavList = [
   {
@@ -77,4 +78,31 @@ export const trainers = [
   { id: 1, img: Trainer1, name: 'John Lewis', job: 'Yoga Trainer' },
   { id: 2, img: Trainer2, name: 'Jonathan Doe', job: 'Crossfit Trainer' },
   { id: 3, img: Trainer3, name: 'Ana June', job: 'Personal Trainer' },
+]
+
+export const testimonials = [
+  {
+    id: 1,
+    img: TestimonialImg,
+    name: 'Tony Stark',
+    job: 'CEO of Stark Industries',
+    text:
+      "I've been a member of Gymate for the past 6 months and it has been an amazing experience. The trainers are knowledgeable and supportive, the equipment is top-notch, and the community of members is friendly and encouraging.",
+  },
+  // {
+  //   id: 2,
+  //   img: TestimonialImg,
+  //   name: 'Harry Porter',
+  //   job: 'CEO of Hogwarts',
+  //   text:
+  //     "I've been a member of Gymate for the past 6 months and it has been an amazing experience. The trainers are knowledgeable and supportive, the equipment is top-notch, and the community of members is friendly and encouraging.",
+  // },
+  // {
+  //   id: 3,
+  //   img: TestimonialImg,
+  //   name: 'Bruce Wayne',
+  //   job: 'CEO of Wane Enterprises',
+  //   text:
+  //     "I've been a member of Gymate for the past 6 months and it has been an amazing experience. The trainers are knowledgeable and supportive, the equipment is top-notch, and the community of members is friendly and encouraging.",
+  // },
 ]
