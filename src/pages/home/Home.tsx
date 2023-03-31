@@ -7,6 +7,7 @@ import Featured from "components/homepage/Featured";
 import ChooseUs from "components/homepage/ChooseUs";
 import Trainers from "components/homepage/Trainers";
 import Testimonials from "components/homepage/Testimonials";
+import Gallery from "components/homepage/Gallery";
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
             <ChooseUs />
             <Trainers />
             <Testimonials />
+            <Gallery />
         </>
     );
 };
