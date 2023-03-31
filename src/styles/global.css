@@ -581,6 +581,15 @@ body {
   grid-column-end: 3;
 }
 
+/* BMMI SECTION --------------------------------*/
+.bmi_section {
+  background-image: url('../styles/images/bmi/background.jpg');
+  object-fit: cover;
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
 /* MEDIA QUERIES --------------------------------*/
 
 @media (max-width: 1200px) {

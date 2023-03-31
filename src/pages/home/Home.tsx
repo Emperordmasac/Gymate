@@ -8,6 +8,7 @@ import ChooseUs from "components/homepage/ChooseUs";
 import Trainers from "components/homepage/Trainers";
 import Testimonials from "components/homepage/Testimonials";
 import Gallery from "components/homepage/Gallery";
+import Bmi from "components/homepage/Bmi";
 
 const Home = () => {
     return (
@@ -19,6 +20,7 @@ const Home = () => {
             <Trainers />
             <Testimonials />
             <Gallery />
+            <Bmi />
         </>
     );
 };
