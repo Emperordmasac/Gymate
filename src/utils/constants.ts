@@ -2,6 +2,9 @@
 import ProgressImg from 'styles/images/who-we-are/progresion.png'
 import WorkoutImg from 'styles/images/who-we-are/workout.png'
 import NutritionImg from 'styles/images/who-we-are/nutritions.png'
+import Trainer1 from 'styles/images/trainers/trainer1.png'
+import Trainer2 from 'styles/images/trainers/trainer2.png'
+import Trainer3 from 'styles/images/trainers/trainer3.png'
 
 export const mainNavList = [
   {
@@ -68,4 +71,10 @@ export const cardList = [
     description:
       'Our team will work with you to create a personalized meal plan that helps you reach your specific health goals.',
   },
+]
+
+export const trainers = [
+  { id: 1, img: Trainer1, name: 'John Lewis', job: 'Yoga Trainer' },
+  { id: 2, img: Trainer2, name: 'Jonathan Doe', job: 'Crossfit Trainer' },
+  { id: 3, img: Trainer3, name: 'Ana June', job: 'Personal Trainer' },
 ]

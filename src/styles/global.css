@@ -463,6 +463,42 @@ body {
   width: 10px;
 }
 
+/* TRAINERS SECTION --------------------------------*/
+.trainers_section {
+  background-image: url(../styles/images/trainers/dot-bg.png);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.trainers_section::after {
+  content: url('../styles/images/trainers/bg-attachment.png');
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.box_desc::after {
+  content: "";
+  width: 45px;
+  height: 4px;
+  background-color: #ff0336;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: all .4s ease-in-out;
+}
+
+.box_desc:hover:after {
+  content: "";
+  width: 100%;
+  height: 4px;
+}
 
 /* MEDIA QUERIES --------------------------------*/
 

@@ -5,6 +5,7 @@ import Hero from "components/homepage/Hero";
 import About from "components/homepage/About";
 import Featured from "components/homepage/Featured";
 import ChooseUs from "components/homepage/ChooseUs";
+import Trainers from "components/homepage/Trainers";
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <About />
             <Featured />
             <ChooseUs />
+            <Trainers />
         </>
     );
 };
