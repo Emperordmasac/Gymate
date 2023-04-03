@@ -47,6 +47,13 @@ body {
   padding-right: 2.5rem;
 }
 
+
+/* NAVIGATION CSS --------------------------------*/
+.nav_btn_hover:hover {
+  transform: rotate(360deg);
+  transition: all 1s;
+}
+
 /* HOME SECTION --------------------------------*/
 .hero_section {
   background-image: url('../styles/images/hero/hero-img.jpg');
