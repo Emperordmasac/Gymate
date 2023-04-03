@@ -633,6 +633,27 @@ body {
   padding: 18px 29px;
 }
 
+/* LOGIN SECTION --------------------------------*/
+.login_section {
+  background-image: url('../styles/images/who-we-are/background.jpg');
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.login_banner {
+  background-image: url('../styles/images/login/banner.jpg');
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 45vh;
+}
+
 /* MEDIA QUERIES --------------------------------*/
 
 @media (max-width: 1200px) {
