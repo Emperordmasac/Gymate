@@ -7,7 +7,7 @@ const CtaBanner = (): JSX.Element => {
     return (
         <>
             <section className="cta_section w-full h-auto">
-                <div className="container page_padding text-white py-[17rem]">
+                <div className="container page_padding text-white py-[7rem]">
                     <h2 className="text-[36px] font-bold">
                         Need a Fitness Trainer?
                     </h2>
