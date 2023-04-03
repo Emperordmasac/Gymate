@@ -613,6 +613,18 @@ body {
   border: 2px solid #FF0336;
 }
 
+/* CTA BANNER SECTION --------------------------------*/
+.cta_section {
+  background-image: url('../styles//images/call/background.jpg');
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cta_banner_btn {
+  padding: 18px 29px;
+}
 
 /* MEDIA QUERIES --------------------------------*/
 

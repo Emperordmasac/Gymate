@@ -11,6 +11,7 @@ import Gallery from "components/homepage/Gallery";
 import Bmi from "components/homepage/Bmi";
 import Pricing from "components/homepage/Pricing";
 import Blog from "components/homepage/Blog";
+import CtaBanner from "components/homepage/CtaBanner";
 
 const Home = () => {
     return (
@@ -25,6 +26,7 @@ const Home = () => {
             <Bmi />
             <Pricing />
             <Blog />
+            <CtaBanner />
         </>
     );
 };
