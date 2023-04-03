@@ -10,7 +10,7 @@ import { TextField } from "components/common/TextInput";
 
 const SignUp = (): JSX.Element => {
     const [showPassword, togglePassword] = useToggle(false);
-    const [loginInfo, setLoginInfo] = useState({ email: "", password: "" });
+    const [credentials, setCredentials] = useState({ email: "", password: "" });
 
     const initialValues = {
         email: "",
@@ -25,8 +25,8 @@ const SignUp = (): JSX.Element => {
     });
 
     const handleSubmit = async (values: any) => {
-        setLoginInfo({ email: values?.email, password: values?.password });
-        console.log("loginInfo-->", loginInfo);
+        setCredentials({ email: values?.email, password: values?.password });
+        console.log("credentials-->", credentials);
         goTop();
     };
 
