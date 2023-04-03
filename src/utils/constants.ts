@@ -199,3 +199,27 @@ export const pricings = [
     ],
   },
 ]
+
+export const blogs = [
+  {
+    id: 1,
+    date: '22.03.2022',
+    title: 'Yoga For Everyone in 2023',
+    description:
+      'This is program designed to make the practice of yoga beneficial for people of all ages, abilities, and backgrounds,',
+  },
+  {
+    id: 2,
+    date: '13.09.2022',
+    title: 'Yoga For Everyone in 2023',
+    description:
+      'Learn how to ease back into your CrossFit routine after a vacation with tips and strategies for success.',
+  },
+  {
+    id: 3,
+    date: '28.06.2022',
+    title: 'Meet Fitness Ambassador Grace',
+    description:
+      'Get to know Grace, a fitness enthusiast and dedicated ambassador who is passionate about helping others reach their fitness goals.',
+  },
+]

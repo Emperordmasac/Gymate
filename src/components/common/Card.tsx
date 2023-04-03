@@ -1,12 +1,14 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 //--INTERNAL IMPORTS
+import { goTop } from "utils/helpers";
+import MainButton from "./MainButton";
 import Quotes from "styles/images/testimonials/quotes.png";
 import BoxShape from "styles/images/testimonials/testimonial-shape.svg";
 import TrainerBg from "styles/images/trainers/trainer-bg.png";
 import Shape from "styles/images/trainers/shape.png";
-import { trainers, testimonials, pricings } from "utils/constants";
-import MainButton from "./MainButton";
+import { trainers, testimonials, pricings, blogs } from "utils/constants";
 
 export const TrainersCard = () => {
     const [isHover, setHover] = useState(false);
@@ -173,6 +175,42 @@ export const PricingCard = () => {
                                 url="/contact"
                             />
                         </div>
+                    </div>
+                ))}
+            </div>
+        </>
+    );
+};
+
+export const BlogCard = () => {
+    return (
+        <>
+            <div className="flex gap-6 w-full mt-5 flex-wrap md1200:justify-center">
+                {blogs.map((blog, i) => (
+                    <div
+                        className="w-[37rem] flex flex-col px-[3rem] py-[5rem] shadow-xl min540:w-[100%]"
+                        key={blog.id}
+                    >
+                        <p className="text-[15px] font-bold text-[#323232] border-[#323232] border-solid rounded-full border-[1px] w-fit px-5 py-2 mb-6">
+                            {blog.date}
+                        </p>
+
+                        <h3 className="text-[22px] font-bold py-5">
+                            {blog.title}
+                        </h3>
+
+                        <p className="text-[15px] text-[#646464] font-medium">
+                            {blog.description}
+                        </p>
+
+                        <Link
+                            to="/blog"
+                            onClick={goTop}
+                            className="text-[15px] uppercase font-bold mt-10 w-[16rem] h-[5rem] bg-[#FF0336] text-white text-center pt-[14px]"
+                        >
+                            Read more &nbsp;
+                            <i className="fa-solid fa-arrow-right"></i>
+                        </Link>
                     </div>
                 ))}
             </div>

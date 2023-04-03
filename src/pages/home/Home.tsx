@@ -10,6 +10,7 @@ import Testimonials from "components/homepage/Testimonials";
 import Gallery from "components/homepage/Gallery";
 import Bmi from "components/homepage/Bmi";
 import Pricing from "components/homepage/Pricing";
+import Blog from "components/homepage/Blog";
 
 const Home = () => {
     return (
@@ -23,6 +24,7 @@ const Home = () => {
             <Gallery />
             <Bmi />
             <Pricing />
+            <Blog />
         </>
     );
 };
