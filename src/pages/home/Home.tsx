@@ -9,6 +9,7 @@ import Trainers from "components/homepage/Trainers";
 import Testimonials from "components/homepage/Testimonials";
 import Gallery from "components/homepage/Gallery";
 import Bmi from "components/homepage/Bmi";
+import Pricing from "components/homepage/Pricing";
 
 const Home = () => {
     return (
@@ -21,6 +22,7 @@ const Home = () => {
             <Testimonials />
             <Gallery />
             <Bmi />
+            <Pricing />
         </>
     );
 };

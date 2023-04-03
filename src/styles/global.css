@@ -590,6 +590,30 @@ body {
   background-repeat: no-repeat;
 }
 
+/* PRICING SECTION --------------------------------*/
+.pricing_section {
+  background-image: url('../styles/images/pricing/background.jpg');
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pricing_cta {
+  transition: all 0.4s;
+  margin-top: 4rem;
+}
+
+.pricing_cta::after {
+  border: 2px solid #ff03353b;
+
+}
+
+.pricing_cta:hover:after {
+  border: 2px solid #FF0336;
+}
+
+
 /* MEDIA QUERIES --------------------------------*/
 
 @media (max-width: 1200px) {

@@ -6,6 +6,9 @@ import Trainer1 from 'styles/images/trainers/trainer1.png'
 import Trainer2 from 'styles/images/trainers/trainer2.png'
 import Trainer3 from 'styles/images/trainers/trainer3.png'
 import TestimonialImg from 'styles/images/testimonials/testimonial-new.jpg'
+import pricing1 from 'styles/images/pricing/img1.jpg'
+import pricing2 from 'styles/images/pricing/img2.jpg'
+import pricing3 from 'styles/images/pricing/img3.jpg'
 
 export const mainNavList = [
   {
@@ -105,4 +108,94 @@ export const testimonials = [
   //   text:
   //     "I've been a member of Gymate for the past 6 months and it has been an amazing experience. The trainers are knowledgeable and supportive, the equipment is top-notch, and the community of members is friendly and encouraging.",
   // },
+]
+
+export const pricings = [
+  {
+    id: 1,
+    img: pricing1,
+    price: 39,
+    title: 'Beginners',
+    rate: 'p/m',
+    details: [
+      {
+        id: 1,
+        detail: 'Free Hand',
+      },
+      {
+        id: 2,
+        detail: 'Gym Fitness',
+      },
+      {
+        id: 3,
+        detail: 'Weight Loss',
+      },
+      {
+        id: 4,
+        detail: 'Personal Trainer',
+      },
+      {
+        id: 5,
+        detail: 'Cycling',
+      },
+    ],
+  },
+  {
+    id: 2,
+    img: pricing2,
+    price: 65,
+    title: 'Expert',
+    rate: 'p/m',
+    details: [
+      {
+        id: 1,
+        detail: 'Free Hand',
+      },
+      {
+        id: 2,
+        detail: 'Gym Fitness',
+      },
+      {
+        id: 3,
+        detail: 'Weight Loss',
+      },
+      {
+        id: 4,
+        detail: 'Personal Trainer',
+      },
+      {
+        id: 5,
+        detail: 'Cycling',
+      },
+    ],
+  },
+  {
+    id: 3,
+    img: pricing3,
+    price: 100,
+    title: 'PRO',
+    rate: 'p/m',
+    details: [
+      {
+        id: 1,
+        detail: 'Free Hand',
+      },
+      {
+        id: 2,
+        detail: 'Gym Fitness',
+      },
+      {
+        id: 3,
+        detail: 'Weight Loss',
+      },
+      {
+        id: 4,
+        detail: 'Personal Trainer',
+      },
+      {
+        id: 5,
+        detail: 'Cycling',
+      },
+    ],
+  },
 ]

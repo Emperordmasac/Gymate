@@ -5,7 +5,8 @@ import Quotes from "styles/images/testimonials/quotes.png";
 import BoxShape from "styles/images/testimonials/testimonial-shape.svg";
 import TrainerBg from "styles/images/trainers/trainer-bg.png";
 import Shape from "styles/images/trainers/shape.png";
-import { trainers, testimonials } from "utils/constants";
+import { trainers, testimonials, pricings } from "utils/constants";
+import MainButton from "./MainButton";
 
 export const TrainersCard = () => {
     const [isHover, setHover] = useState(false);
@@ -120,6 +121,61 @@ export const TestimonialCard = () => {
                     </div>
                 </div>
             ))}
+        </>
+    );
+};
+
+export const PricingCard = () => {
+    return (
+        <>
+            <div className="flex gap-10 mt-32 z-[2] relative md1000:flex-col md1000:items-center">
+                {pricings.map((pricing, i) => (
+                    <div
+                        key={pricing.id}
+                        className="flex flex-col w-1/3 bg-white shadow-xl relative min540:w-[100%] md1000:w-[40rem]"
+                    >
+                        <div
+                            style={{ transition: "all 0.3s" }}
+                            className="relative grayscale hover:grayscale-0"
+                        >
+                            <img
+                                src={pricing.img}
+                                alt="pricing-img"
+                                className="w-full h-full"
+                            />
+                            <div className="absolute bg-white text-[20px] font-bold w-[25rem] text-center py-6 text-[#ff0336] -bottom-[18px] left-0 right-0 mx-auto">
+                                {pricing.title}
+                            </div>
+                        </div>
+                        <div className="flex flex-col items-center pt-[20px] pb-[50px]">
+                            <p className="text-center text-[55px] font-bold relative py-[10px]">
+                                <span className="text-[30px] text-[#6d6d6d] font-normal top-8 -left-[3rem] absolute">
+                                    $
+                                </span>
+                                {pricing.price}
+                                <span className="text-[22px] text-[#6d6d6d] font-normal bottom-[25px] -right-[6rem] absolute">
+                                    {pricing.rate}
+                                </span>
+                            </p>
+
+                            <div className="flex flex-col text-[16px] font-medium text-center gap-8 text-[#646464]">
+                                {pricing.details.map((detail, i) => (
+                                    <p key={detail.id}>{detail.detail}</p>
+                                ))}
+                            </div>
+
+                            <MainButton
+                                color={`!text-white`}
+                                bg={`bg-[#ff0336]`}
+                                text="purchase now"
+                                arrowColor={`!text-white`}
+                                cN="pricing_cta"
+                                url="/contact"
+                            />
+                        </div>
+                    </div>
+                ))}
+            </div>
         </>
     );
 };
