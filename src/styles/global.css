@@ -634,7 +634,7 @@ body {
 }
 
 /* LOGIN SECTION --------------------------------*/
-.login_section {
+.section_div {
   background-image: url('../styles/images/who-we-are/background.jpg');
   object-fit: cover;
   background-size: cover;
@@ -644,7 +644,7 @@ body {
   height: 100%;
 }
 
-.login_banner {
+.section_banner {
   background-image: url('../styles/images/login/banner.jpg');
   object-fit: cover;
   background-size: cover;

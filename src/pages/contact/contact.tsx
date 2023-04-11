@@ -7,7 +7,7 @@ const Contact = (): JSX.Element => {
         <>
             <section id="contact">
                 {/* header */}
-                <div className="login_banner flex justify-center relative">
+                <div className="section_banner flex justify-center relative">
                     <h1 className="text-white bottom-[25px] text-[3rem] font-bold absolute">
                         Contact Us
                     </h1>

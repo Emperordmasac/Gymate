@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 //--INTERNAL IMPORTS
 import NavBar from "components/navigation";
 import Footer from "components/homepage/Footer";
-import { Home, Login, SignUp, Contact } from "pages";
+import { Home, Login, SignUp, Contact, About } from "pages";
 
 const MainPageLayout = (): JSX.Element => {
     return (
@@ -15,6 +15,7 @@ const MainPageLayout = (): JSX.Element => {
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<SignUp />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/about" element={<About />} />
             </Routes>
             <Footer />
         </>
