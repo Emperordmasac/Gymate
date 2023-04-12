@@ -654,6 +654,71 @@ body {
   height: 45vh;
 }
 
+/* CLASSES PAGE ----- */
+.cycling_bg,
+.meditaion_bg,
+.mma_bg,
+.karate_bg,
+.power_bg,
+.workout_bg,
+.cross_bg,
+.run_bg {
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.cycling_bg {
+  background-image: url('../styles/images/classes/cycling.jpg');
+}
+
+.meditaion_bg {
+  background-image: url('../styles/images/classes/meditation.jpg');
+}
+
+.mma_bg {
+  background-image: url('../styles/images/classes/mma.jpg');
+}
+
+.karate_bg {
+  background-image: url('../styles/images/classes/karate.jpg');
+}
+
+.powerlift_bg {
+  background-image: url('../styles/images/classes/powerlifting.jpg');
+}
+
+.workout_bg {
+  background-image: url('../styles/images/classes/workout.jpg');
+}
+
+.crossfit_bg {
+  background-image: url('../styles/images/classes/cross.jpg');
+}
+
+.running_bg {
+  background-image: url('../styles/images/classes/running.jpg');
+}
+
+.box_bg {
+  background-image: url('../styles/images/classes/box.jpg');
+}
+
+.bodybuilding_bg {
+  background-image: url('../styles/images/classes/bodybuilding.jpg');
+}
+
+.yoga_bg {
+  background-image: url('../styles/images/classes/yoga.jpg');
+}
+
+.fitness_bg {
+  background-image: url('../styles/images/classes/fitness.jpg');
+}
+
+
 /* MEDIA QUERIES --------------------------------*/
 
 @media (max-width: 1200px) {
