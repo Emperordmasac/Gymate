@@ -5,5 +5,6 @@ import Contact from './contact/contact'
 import About from './about/About'
 import Classes from './classes/Classes'
 import Pricing from './pricing/Pricing'
+import Blog from './blog/Blog'
 
-export { Home, Login, SignUp, Contact, About, Classes, Pricing }
+export { Home, Login, SignUp, Contact, About, Classes, Pricing, Blog }

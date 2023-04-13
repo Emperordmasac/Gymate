@@ -719,6 +719,25 @@ body {
 }
 
 
+/* BLOGS PAGE ----- */
+.blog_cta {
+  padding: 18px 22px;
+  margin-left: 0;
+}
+
+.blog_banner {
+  background-image: url('../styles/images/blogpage/sidebar1.png');
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner_shape {
+  -webkit-clip-path: polygon(0 0, 100% 0, 88% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 88% 100%, 0% 100%);
+}
+
 /* MEDIA QUERIES --------------------------------*/
 
 @media (max-width: 1200px) {
