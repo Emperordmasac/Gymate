@@ -9,6 +9,14 @@ import Blog from './blog/Blog'
 import BigGallery from './BigGallery/BigGallery'
 import BigGalleryPage1 from './BigGallery/BigGalleryPage1'
 import BigGalleryPage2 from './BigGallery/BigGalleryPage2'
+import Schedule from './schedule/Schedule'
+import Monday from './schedule/Monday'
+import Tuesday from './schedule/Tuesday'
+import Wednesday from './schedule/Wednesday'
+import Thursday from './schedule/Thursday'
+import Friday from './schedule/Friday'
+import Saturday from './schedule/Saturday'
+import Sunday from './schedule/Sunday'
 
 export {
   Home,
@@ -22,4 +30,12 @@ export {
   BigGallery,
   BigGalleryPage1,
   BigGalleryPage2,
+  Schedule,
+  Monday,
+  Tuesday,
+  Wednesday,
+  Thursday,
+  Friday,
+  Saturday,
+  Sunday,
 }

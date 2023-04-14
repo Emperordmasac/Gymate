@@ -16,6 +16,14 @@ import {
     BigGallery,
     BigGalleryPage1,
     BigGalleryPage2,
+    Schedule,
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+    Sunday,
 } from "pages";
 
 const MainPageLayout = (): JSX.Element => {
@@ -35,6 +43,16 @@ const MainPageLayout = (): JSX.Element => {
                 <Route path="gallery" element={<BigGallery />}>
                     <Route path="1" element={<BigGalleryPage1 />} />
                     <Route path="2" element={<BigGalleryPage2 />} />
+                </Route>
+
+                <Route path="schedule" element={<Schedule />}>
+                    <Route path="monday" element={<Monday />} />
+                    <Route path="tuesday" element={<Tuesday />} />
+                    <Route path="wednesday" element={<Wednesday />} />
+                    <Route path="thursday" element={<Thursday />} />
+                    <Route path="friday" element={<Friday />} />
+                    <Route path="saturday" element={<Saturday />} />
+                    <Route path="sunday" element={<Sunday />} />
                 </Route>
             </Routes>
             <Footer />
